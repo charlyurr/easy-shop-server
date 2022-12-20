@@ -1,0 +1,36 @@
+
+
+npx create-react-app easy-shop --template @native-base    -- not working
+expo init easy-shop --template @native-base/expo-template -- working
+
+
+🚨 The following packages were not updated. You should check the READMEs for those repositories to determine what version is compatible with your new set of packages:
+native-base, react-timer-mixin
+
+Please refer to the release notes for information on any further required steps to update and information about breaking changes:
+https://blog.expo.dev/expo-sdk-47-a0f6f5c038af
+
+
+
+
+<Header searchBar rounded>
+        <Item>
+          {/* <Icon name="ios-search" /> */}
+          {/* <Input
+            placeholder="Search"
+            //onFocus={}
+            //onChangeText={(text) =>}
+          /> */}
+        </Item>
+      </Header>
+      
+
+npm uninstall react-native-safe-area-context@4.4.1 react-native-svg@13.4.0 react-native-web@~0.18.9
+npm install native-base react-native-safe-area-context@4.4.1 react-native-svg@13.4.0 react-native-web@~0.18.9
+
+
+yarn remove react-native-web@0.17.1 
+yarn remove native-base 
+yarn remove react-native-svg@12.1.1 
+yarn remove react-native-safe-area-context@3.3.2
+
